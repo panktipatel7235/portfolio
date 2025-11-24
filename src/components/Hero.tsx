@@ -21,19 +21,34 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-10 section-padding text-center max-w-4xl mx-auto">
-        <div className="space-y-6 animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
+        <div className="space-y-6">
+          <h1 
+            className="text-5xl md:text-7xl font-bold tracking-tight"
+            data-aos="fade-up"
+          >
             <span className="block text-foreground">Patel Pankti</span>
-            <span className="block mt-2 gradient-text">
+            <span 
+              className="block mt-2 gradient-text"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               Graphic & UI/UX Designer
             </span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          <p 
+            className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
             Creative designer crafting user-friendly and visually appealing digital experiences.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
+          <div 
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
             <Button
               size="lg"
               className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-8"
@@ -54,9 +69,9 @@ const Hero = () => {
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
           <ArrowDown className="h-6 w-6 text-primary" />
-        </div>
+        </div> */}
       </div>
     </section>
   );

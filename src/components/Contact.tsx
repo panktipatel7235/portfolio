@@ -27,7 +27,7 @@ const Contact = () => {
   return (
     <section id="contact" className="section-padding bg-muted/30">
       <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-16 animate-fade-in-up">
+        <div className="text-center mb-16" data-aos="fade-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Get in Touch</h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full mb-6" />
           <p className="text-muted-foreground text-lg">
@@ -37,7 +37,12 @@ const Contact = () => {
 
         <div className="grid md:grid-cols-3 gap-6 mb-12">
           {contactInfo.map((info, index) => (
-            <Card key={index} className="hover-lift border-none shadow-md bg-card animate-fade-in-up text-center">
+            <Card 
+              key={index} 
+              className="hover-lift border-none shadow-md bg-card text-center"
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
+            >
               <CardContent className="p-6">
                 <div className="bg-secondary/20 p-4 rounded-lg w-fit mx-auto mb-4">
                   <info.icon className="h-6 w-6 text-primary" />
@@ -58,7 +63,11 @@ const Contact = () => {
           ))}
         </div>
 
-        <Card className="border-none shadow-lg bg-card animate-fade-in-up">
+        <Card 
+          className="border-none shadow-lg bg-card"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
           <CardContent className="p-8 text-center space-y-6">
             <div>
               <h3 className="text-2xl font-bold mb-2">Download My Resume</h3>
@@ -72,7 +81,7 @@ const Contact = () => {
               asChild
             >
               <a
-                href="https://www.canva.com/design/DAF9j8e8Wg4/qbfCJn8MrfpgWHzgv08L5g/view?utm_content=DA[%E2%80%A6]m_campaign=designshare&utm_medium=link&utm_source=editor"
+                href="https://drive.google.com/file/d/1Hv51ckfnfr6T2Xrt4jQRpA_7WwFrlGl0"
                 target="_blank"
                 rel="noopener noreferrer"
               >

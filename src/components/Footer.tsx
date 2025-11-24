@@ -3,7 +3,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-primary text-primary-foreground py-8">
-      <div className="max-w-6xl mx-auto px-6 text-center">
+      <div className="max-w-6xl mx-auto px-6 text-center" data-aos="fade-up">
         <p className="text-sm opacity-90">
           © {currentYear} Patel Pankti. All rights reserved.
         </p>

@@ -32,17 +32,22 @@ const Skills = () => {
   return (
     <section id="skills" className="section-padding">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16 animate-fade-in-up">
+        <div className="text-center mb-16" data-aos="fade-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Skills & Expertise</h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full" />
         </div>
 
         {/* Technical Skills */}
         <div className="mb-16">
-          <h3 className="text-2xl font-semibold mb-8 text-center">Technical Skills</h3>
+          <h3 className="text-2xl font-semibold mb-8 text-center" data-aos="fade-up">Technical Skills</h3>
           <div className="grid md:grid-cols-3 gap-6">
             {technicalSkills.map((skill, index) => (
-              <Card key={index} className="hover-lift border-none shadow-md bg-card animate-fade-in-up">
+              <Card 
+                key={index} 
+                className="hover-lift border-none shadow-md bg-card"
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
+              >
                 <CardContent className="p-6">
                   <div className="bg-secondary/20 p-3 rounded-lg w-fit mb-4">
                     <skill.icon className="h-6 w-6 text-primary" />
@@ -64,10 +69,15 @@ const Skills = () => {
 
         {/* Soft Skills */}
         <div>
-          <h3 className="text-2xl font-semibold mb-8 text-center">Soft Skills</h3>
+          <h3 className="text-2xl font-semibold mb-8 text-center" data-aos="fade-up">Soft Skills</h3>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {softSkills.map((skill, index) => (
-              <Card key={index} className="hover-lift border-none shadow-md bg-card animate-fade-in-up text-center">
+              <Card 
+                key={index} 
+                className="hover-lift border-none shadow-md bg-card text-center"
+                data-aos="fade-up"
+                data-aos-delay={index * 50}
+              >
                 <CardContent className="p-6">
                   <div className="bg-accent/20 p-3 rounded-lg w-fit mx-auto mb-3">
                     <skill.icon className="h-5 w-5 text-primary" />

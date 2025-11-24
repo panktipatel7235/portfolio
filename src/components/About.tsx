@@ -5,13 +5,13 @@ const About = () => {
   return (
     <section id="about" className="section-padding bg-muted/30">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16 animate-fade-in-up">
+        <div className="text-center mb-16" data-aos="fade-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">About Me</h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full" />
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6 animate-fade-in-up">
+          <div className="space-y-6" data-aos="fade-right">
             <p className="text-lg leading-relaxed text-muted-foreground">
               I'm a passionate designer combining creativity and technology to create 
               meaningful digital experiences. My design philosophy centers on creating 
@@ -25,8 +25,12 @@ const About = () => {
             </p>
           </div>
 
-          <div className="grid gap-4 animate-fade-in-up">
-            <Card className="hover-lift border-none shadow-md bg-card">
+          <div className="grid gap-4" data-aos="fade-left">
+            <Card 
+              className="hover-lift border-none shadow-md bg-card"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               <CardContent className="flex items-start gap-4 p-6">
                 <div className="bg-secondary/20 p-3 rounded-lg">
                   <GraduationCap className="h-6 w-6 text-primary" />
@@ -46,7 +50,11 @@ const About = () => {
               </CardContent>
             </Card>
 
-            <Card className="hover-lift border-none shadow-md bg-card">
+            <Card 
+              className="hover-lift border-none shadow-md bg-card"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <CardContent className="flex items-start gap-4 p-6">
                 <div className="bg-accent/20 p-3 rounded-lg">
                   <Languages className="h-6 w-6 text-primary" />
@@ -60,7 +68,11 @@ const About = () => {
               </CardContent>
             </Card>
 
-            <Card className="hover-lift border-none shadow-md bg-card">
+            <Card 
+              className="hover-lift border-none shadow-md bg-card"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
               <CardContent className="flex items-start gap-4 p-6">
                 <div className="bg-secondary/20 p-3 rounded-lg">
                   <Sparkles className="h-6 w-6 text-primary" />

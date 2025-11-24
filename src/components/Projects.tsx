@@ -8,21 +8,21 @@ import project4 from "@/assets/project-4.jpg";
 
 const Projects = () => {
   const projects = [
-    {
-      title: "Trendify - E-Commerce Fashion App",
-      role: "UI/UX Designer",
-      description: "Modern fashion e-commerce mobile app with intuitive navigation, clean product displays, and seamless checkout experience.",
-      tools: ["Figma", "UI Design", "Prototyping"],
-      image: project1,
-      link: "https://www.figma.com/design/IKcXxiTlHIU1GY6LsS8nFr/trendify?node-id=0-1&t=h0gZGPkCdjhkz3qn-1",
-    },
-    {
-      title: "Brand Identity Design",
-      role: "Graphic Designer",
-      description: "Complete brand identity package including logo design, business cards, letterheads, and social media templates.",
-      tools: ["Illustrator", "Canva", "Brand Design"],
-      image: project2,
-    },
+    // {
+    //   title: "Trendify - E-Commerce Fashion App",
+    //   role: "UI/UX Designer",
+    //   description: "Modern fashion e-commerce mobile app with intuitive navigation, clean product displays, and seamless checkout experience.",
+    //   tools: ["Figma", "UI Design", "Prototyping"],
+    //   image: project1,
+    //   link: "https://www.figma.com/design/IKcXxiTlHIU1GY6LsS8nFr/trendify?node-id=0-1&t=h0gZGPkCdjhkz3qn-1",
+    // },
+    // {
+    //   title: "Brand Identity Design",
+    //   role: "Graphic Designer",
+    //   description: "Complete brand identity package including logo design, business cards, letterheads, and social media templates.",
+    //   tools: ["Illustrator", "Canva", "Brand Design"],
+    //   image: project2,
+    // },
     {
       title: "Portfolio Website Design",
       role: "UI/UX Designer",
@@ -42,7 +42,7 @@ const Projects = () => {
   return (
     <section id="projects" className="section-padding">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16 animate-fade-in-up">
+        <div className="text-center mb-16" data-aos="fade-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Featured Projects</h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full mb-6" />
           <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -52,7 +52,12 @@ const Projects = () => {
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {projects.map((project, index) => (
-            <Card key={index} className="hover-lift border-none shadow-lg overflow-hidden bg-card animate-fade-in-up group">
+            <Card 
+              key={index} 
+              className="hover-lift border-none shadow-lg overflow-hidden bg-card group"
+              data-aos="fade-up"
+              data-aos-delay={index * 200}
+            >
               <div className="relative overflow-hidden">
                 <img
                   src={project.image}
@@ -77,7 +82,7 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
-                {project.link && (
+                {/* {project.link && (
                   <Button
                     variant="outline"
                     className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground"
@@ -89,14 +94,18 @@ const Projects = () => {
                       <ExternalLink className="ml-2 h-4 w-4" />
                     </a>
                   </Button>
-                )}
+                )} */}
               </CardContent>
             </Card>
           ))}
         </div>
 
         <div className="text-center">
-          <Card className="border-none shadow-lg bg-card inline-block animate-fade-in-up">
+          <Card 
+            className="border-none shadow-lg bg-card inline-block"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
             <CardContent className="p-6">
               <p className="text-muted-foreground mb-4">View more work samples</p>
               <Button
@@ -105,11 +114,11 @@ const Projects = () => {
                 asChild
               >
                 <a
-                  href="https://drive.google.com/drive/folders/1_8YgVKKgN6hTlwP6u5iiLXUaDXHiBKbH"
+                  href="https://drive.google.com/drive/folders/1qSASFDrCqJr0ClAEo6Mzh0qNzn4z00Lf?usp=drive_link"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Google Drive Portfolio
+                  See Full Portfolio
                   <ExternalLink className="ml-2 h-4 w-4" />
                 </a>
               </Button>

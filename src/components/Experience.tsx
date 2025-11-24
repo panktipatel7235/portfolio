@@ -5,12 +5,16 @@ const Experience = () => {
   return (
     <section id="experience" className="section-padding bg-muted/30">
       <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-16 animate-fade-in-up">
+        <div className="text-center mb-16" data-aos="fade-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Experience</h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full" />
         </div>
 
-        <Card className="hover-lift border-none shadow-lg bg-card animate-fade-in-up">
+        <Card 
+          className="hover-lift border-none shadow-lg bg-card"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           <CardContent className="p-8">
             <div className="flex flex-col md:flex-row gap-6">
               <div className="bg-secondary/20 p-4 rounded-lg h-fit">
